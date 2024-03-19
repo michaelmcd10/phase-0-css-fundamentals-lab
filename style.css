@@ -1,5 +1,108 @@
-body {
-  width: 100%;
-  height: 100%;
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, figure, nav, header, section {
+  margin: centre;
+  padding: centre;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, nav {
+  text-align: center;
+}
+
+/* nav::link {
+  colour: blue ;
+}
+nav: :visited {
+  colour: purple
+} */
+
+nav a:hover{
+  color: rgb(81, 81, 241);
+}
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#featured-property {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#featured-property figure {
+  margin-bottom: 20px;
+}
+
+#featured-property > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+#featured-property img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#details {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#details div {
+  flex: 0 1 calc(25% - 10px);
+  margin-bottom: 20px;
+}
+
+#details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#details p {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #details div {
+    flex-basis: 50%;
+  }
 }
